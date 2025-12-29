@@ -1,0 +1,33 @@
+@import "tailwindcss";
+@font-face {
+  font-family: "Vellago";
+  src: url("/fonts/Vellago-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Vellago", serif;
+}
+.marquee-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 25s linear infinite;
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+a , button{
+  cursor: pointer;
+}
