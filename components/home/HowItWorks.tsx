@@ -72,7 +72,7 @@ export default function HowItWorks() {
   return (
     <section className="py-20 bg-white overflow-hidden">
       <motion.div
-        className="max-w-9/12 mx-auto px-6 text-center"
+        className="md:max-w-9/12 mx-auto px-6 text-center"
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -89,7 +89,7 @@ export default function HowItWorks() {
 
         {/* Cards */}
         <motion.div
-          className="mt-14 grid md:grid-cols-3 gap-36 relative"
+          className="mt-14 grid md:grid-cols-3 gap-16 md:gap-36 relative"
           variants={container}
           initial="hidden"
           whileInView="show"

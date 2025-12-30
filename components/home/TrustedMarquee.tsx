@@ -53,7 +53,7 @@ export default function TrustedMarquee() {
         <div className="overflow-hidden w-full">
           <div
             ref={trackRef}
-            className="flex gap-20 w-max will-change-transform"
+            className="flex gap-6 md:gap-20 w-max will-change-transform"
           >
             {[...logos, ...logos].map((logo, index) => (
               <img

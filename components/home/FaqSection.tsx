@@ -25,20 +25,20 @@ const faqs = [
 ];
 
 export default function FaqSection() {
-  const [active, setActive] = useState<number | null>(1);
+  const [active, setActive] = useState<number | null>(0);
 
   return (
-    <section className="py-24 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-20 items-center">
+    <section className="py-16 md:py-24 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
         {/* LEFT FAQ */}
         <div>
-          <p className="uppercase text-sm tracking-widest text-gray-400 mb-2">
+          <p className="uppercase text-xs sm:text-sm tracking-widest text-gray-400 mb-2">
             Our Question & Answer
           </p>
 
-          <h2 className="text-5xl font-semibold text-gray-900 mb-10">
-            Have Any Questions About <br /> Our NetBand Company
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 mb-8 leading-tight">
+            Have Any Questions About <br className="hidden sm:block" /> Our NetBand Company
           </h2>
 
           <div className="space-y-4">
@@ -47,17 +47,18 @@ export default function FaqSection() {
               return (
                 <div
                   key={i}
-                  className="bg-white border border-gray-200 rounded-lg overflow-hidden"
+                  className="bg-white border border-gray-200 rounded-xl overflow-hidden"
                 >
                   {/* Question */}
                   <button
                     onClick={() => setActive(isOpen ? null : i)}
-                    className="w-full flex justify-between items-center px-6 py-5 text-left"
+                    className="w-full flex justify-between items-center gap-4 px-4 sm:px-6 py-4 sm:py-5 text-left"
                   >
-                    <span className="font-bold text-xl text-gray-900">
+                    <span className="font-semibold text-base sm:text-lg text-gray-900">
                       {item.q}
                     </span>
-                    <span className="w-8 h-8 rounded-full border bg-black  text-white border-gray-300 flex items-center justify-center">
+
+                    <span className="w-9 h-9 shrink-0 rounded-full bg-black text-white flex items-center justify-center">
                       {isOpen ? <Minus size={16} /> : <Plus size={16} />}
                     </span>
                   </button>
@@ -69,8 +70,8 @@ export default function FaqSection() {
                         initial={{ height: 0, opacity: 0 }}
                         animate={{ height: "auto", opacity: 1 }}
                         exit={{ height: 0, opacity: 0 }}
-                        transition={{ duration: 0.4, ease: "easeInOut" }}
-                        className="px-6 pb-6 text-gray-600 text-sm leading-relaxed"
+                        transition={{ duration: 0.35, ease: "easeInOut" }}
+                        className="px-4 sm:px-6 pb-5 text-gray-600 text-sm sm:text-base leading-relaxed"
                       >
                         {item.a}
                       </motion.div>
@@ -83,15 +84,10 @@ export default function FaqSection() {
         </div>
 
         {/* RIGHT IMAGE */}
-        <div className="relative flex justify-center">
-
-          {/* Abstract Shape
-          <div className="absolute -top-10 -right-10 w-72 h-72 border-2 border-gray-300 rotate-12"></div> */}
-
-          {/* Image */}
-          <div className="relative w-[620px] h-[520px] overflow-hidden ">
+        <div className="relative flex justify-center lg:justify-end">
+          <div className="relative w-full max-w-[420px] sm:max-w-[520px] lg:max-w-[620px] h-[320px] sm:h-[420px] lg:h-[520px] rounded-2xl overflow-hidden shadow-lg">
             <Image
-              src="/images/bgfaqimg.png" // apni image yaha rakho
+              src="/images/bgfaqimg.png"
               alt="FAQ"
               fill
               className="object-cover"

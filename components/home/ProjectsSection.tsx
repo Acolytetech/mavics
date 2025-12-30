@@ -61,7 +61,7 @@ export default function ProjectsSection() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
-            className="uppercase tracking-widest text-8xl font-bold block mb-4"
+            className="uppercase tracking-widest text-4xl md:text-8xl font-bold block mb-4"
             style={{
               color: "transparent",
               WebkitTextStroke: "1.5px rgba(255,255,255,0.6)",
@@ -70,7 +70,7 @@ export default function ProjectsSection() {
             Projects
           </motion.span>
 
-          <h2 className="text-4xl md:text-5xl font-semibold leading-tight">
+          <h2 className="text-3xl md:text-5xl font-semibold leading-tight">
             Discover Modern Living <br /> At Realar Residence.
           </h2>
 

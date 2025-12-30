@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function Hero() {
   return (
     <section
-      className="relative w-full min-h-[100vh] flex items-center bg-cover bg-bottom-left bg-no-repeat overflow-hidden"
+      className="relative w-full min-h-[90vh] md:min-h-[100vh] flex items-center bg-cover bg-center md:bg-bottom-left bg-no-repeat overflow-hidden"
       style={{
         backgroundImage: "url('/images/bg-11.png')",
       }}
@@ -54,7 +54,7 @@ export default function Hero() {
             transition={{ delay: 0.6, duration: 0.6 }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="mt-10 px-8 py-4 rounded-full bg-gray-900 text-white text-sm font-medium shadow-lg hover:bg-gray-800 transition"
+            className="mt-10 px-8 py-4 rounded-full bg-gray-900 text-white text-xl font-bold shadow-lg hover:bg-gray-800 transition cursor-pointer"
           >
             Find Property
           </motion.button>

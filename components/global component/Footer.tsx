@@ -8,6 +8,7 @@ import {
   Linkedin,
   Instagram,
 } from "lucide-react";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -17,10 +18,10 @@ export default function Footer() {
         {/* Brand */}
         <div>
           <div className="flex items-center gap-2 mb-4">
-            <div className="w-8 h-8 bg-gray-900 text-white rounded flex items-center justify-center font-bold">
-              M
+            <div className="w-fit rounded flex items-center justify-center font-bold">
+              <Image src="/images/logo.png" alt="Mavics Logo" width={150} height={24} />
             </div>
-            <span className="text-xl font-semibold">Mavics</span>
+            {/* <span className="text-xl font-semibold">Mavics</span> */}
           </div>
 
           <ul className="space-y-3 text-sm text-gray-600">
@@ -68,7 +69,7 @@ export default function Footer() {
 
           <Link
             href="/contact"
-            className="inline-block mb-6 px-5 py-2 rounded-md bg-emerald-500 text-white text-sm hover:bg-emerald-600 transition"
+            className="inline-block mb-6 px-5 py-2 rounded-md bg-black text-white text-sm hover:bg-black/80 transition"
           >
             Make an Inquiry
           </Link>
@@ -87,9 +88,9 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="border-t border-gray-200">
-        <div className="max-w-7xl mx-auto px-6 py-4 text-sm text-gray-500">
-          © {new Date().getFullYear()} RealHomes. All Rights Reserved.
-        </div>
+    <div className="max-w-7xl mx-auto px-6 py-4 text-sm text-gray-500">
+  © {new Date().getFullYear()} Mavics Realty Pvt. Ltd. All Rights Reserved.
+</div>
       </div>
     </footer>
   );
