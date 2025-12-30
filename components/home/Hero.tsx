@@ -11,10 +11,10 @@ export default function Hero() {
       }}
     >
 {/* Left → Right White to Transparent Overlay */}
-<div className="absolute inset-0 bg-gradient-to-r from-white/70 via-white/30 to-transparent"></div>
+<div className="absolute inset-0 bg-gradient-to-r from-white/70 via-white/30 to-transparent z-10"></div>
 
 
-      <div className="relative max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+      <div className="relative max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center z-20">
         
         {/* LEFT CONTENT */}
         <motion.div
@@ -37,7 +37,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
-            className="mt-6 text-gray-700 max-w-lg text-lg font-semibold leading-relaxed"
+            className="mt-6 text-gray-700 max-w-lg text-lg font-semibold leading-relaxed "
           >
             We've got you covered at every step of your property journey. From
             discovering premium residential spaces to exploring thoughtfully
@@ -54,7 +54,7 @@ export default function Hero() {
             transition={{ delay: 0.6, duration: 0.6 }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="mt-10 px-8 py-4 rounded-full bg-gray-900 text-white text-xl font-bold shadow-lg hover:bg-gray-800 transition cursor-pointer"
+            className="mt-10 px-8 py-4 rounded-full  bg-gray-900 text-white text-xl font-bold shadow-lg hover:bg-gray-800 transition hover:cursor-pointer"
           >
             Find Property
           </motion.button>
