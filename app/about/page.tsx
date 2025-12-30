@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { Metadata } from "next";
+import StatsCounter from "@/components/home/StatsCounter";
 
 export const metadata: Metadata = {
   title: "About Us | India’s Trusted Real Estate Platform",
@@ -32,10 +33,10 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-black/60"></div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 text-white text-center">
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+          <h1 className="text-3xl md:text-6xl font-bold leading-tight">
             About Our Company
           </h1>
-          <p className="mt-6 max-w-2xl text-white/80 text-lg">
+          <p className="mt-6 max-w-2xl text-white/80  text-sm md:text-lg">
             We are India’s fastest-growing real estate platform helping people
             discover properties that truly feel like home.
           </p>
@@ -43,7 +44,7 @@ export default function AboutPage() {
       </section>
 
       {/* ABOUT CONTENT */}
-      <section className="py-24 bg-white">
+      <section className=" py-10 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-20 items-center">
 
           {/* LEFT */}
@@ -52,11 +53,11 @@ export default function AboutPage() {
               Who We Are
             </p>
 
-            <h2 className="text-4xl font-semibold text-gray-900 leading-tight">
+            <h2 className="text-2xl md:text-4xl font-semibold text-gray-900 leading-tight">
               India’s Most Reliable <br /> Real Estate Platform
             </h2>
 
-            <p className="mt-6 text-gray-600 leading-relaxed">
+            <p className="mt-4 md:mt-6 text-gray-600 leading-relaxed">
               We simplify property buying, selling, and renting by combining
               technology with expert guidance. Our platform connects buyers,
               sellers, investors, and developers across India.
@@ -67,26 +68,16 @@ export default function AboutPage() {
               support, we ensure that every property journey is smooth,
               trustworthy, and rewarding.
             </p>
-
-            <div className="mt-10 grid grid-cols-3 gap-8">
-              <div>
-                <h3 className="text-3xl font-bold text-gray-900">2000+</h3>
-                <p className="text-sm text-gray-500 mt-1">Happy Clients</p>
-              </div>
-              <div>
-                <h3 className="text-3xl font-bold text-gray-900">500+</h3>
-                <p className="text-sm text-gray-500 mt-1">Projects</p>
-              </div>
-              <div>
-                <h3 className="text-3xl font-bold text-gray-900">50+</h3>
-                <p className="text-sm text-gray-500 mt-1">Cities</p>
-              </div>
-            </div>
+<div className="mt-10 grid grid-cols-3 gap-8">
+  <StatsCounter value={2000} label="Happy Clients" />
+  <StatsCounter value={500} label="Projects" />
+  <StatsCounter value={50} label="Cities" />
+</div>
           </div>
 
           {/* RIGHT IMAGE */}
           <div className="relative">
-            <div className="relative w-full h-[520px] rounded-3xl overflow-hidden shadow-xl">
+            <div className="relative w-full h-[300px] md:h-[520px] rounded-3xl overflow-hidden shadow-xl">
               <Image
                 src="/images/1.jpeg"
                 alt="Our real estate team"
@@ -100,7 +91,7 @@ export default function AboutPage() {
       </section>
 
       {/* MISSION & VISION */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-10 md:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16">
 
           <div className="bg-white p-10 rounded-2xl shadow-sm">
@@ -129,10 +120,10 @@ export default function AboutPage() {
 
       {/* CTA */}
       <section className="py-24 bg-black text-white text-center">
-        <h2 className="text-4xl font-semibold">
+        <h2 className="text-xl md:text-4xl font-semibold">
           Ready to Find Your Dream Property?
         </h2>
-        <p className="mt-4 text-white/70 max-w-xl mx-auto">
+        <p className="mt-4 text-white/70 max-w-xl mx-auto text-sm md:text-lg">
           Explore verified projects, trusted agents, and premium properties
           across India.
         </p>

@@ -80,7 +80,7 @@ export default function Navbar() {
       {/* MOBILE MENU */}
       {open && (
         <div className="md:hidden bg-white border-t">
-          <div className="px-6 py-4 space-y-4 text-sm">
+          <div className="px-6 py-4 flex flex-col space-y-4 text-sm">
             <Link href="/" onClick={() => setOpen(false)}>Home</Link>
             <Link href="/about" onClick={() => setOpen(false)}>About</Link>
             <Link href="/residences" onClick={() => setOpen(false)}>Residences</Link>

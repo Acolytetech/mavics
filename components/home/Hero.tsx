@@ -27,7 +27,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
-            className="text-4xl md:text-5xl lg:text-6xl leading-tight text-gray-900 font-semibold"
+            className="text-2xl md:text-5xl lg:text-6xl leading-tight text-gray-900 font-semibold"
           >
             India’s Largest <br /> Real Estate Platform
           </motion.h1>
@@ -37,7 +37,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
-            className="mt-6 text-gray-700 max-w-lg text-lg font-semibold leading-relaxed "
+            className="mt-6 text-gray-700 max-w-lg text-sm md:text-lg font-semibold leading-relaxed "
           >
             We've got you covered at every step of your property journey. From
             discovering premium residential spaces to exploring thoughtfully

@@ -28,15 +28,15 @@ export default function ContactPage() {
           alt="Contact Real Estate Company"
           fill
           priority
-          className="object-cover opacity-90"
+          className="object-cover object-center opacity-90"
         />
         <div className="absolute inset-0 bg-black/80"></div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 text-center text-white">
-          <h1 className="text-4xl md:text-6xl font-bold">
+          <h1 className="text-2xl md:text-4xl md:text-6xl font-bold">
             Contact Us
           </h1>
-          <p className="mt-6 max-w-2xl text-white/80 text-2xl">
+          <p className="mt-6 max-w-2xl text-white/80 text-xl md:text-2xl">
             Have questions? Our property experts are ready to help you find
             your perfect home or investment.
           </p>

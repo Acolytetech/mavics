@@ -64,16 +64,16 @@ export default function Feature() {
       {/* HERO */}
       <section className="relative min-h-[55vh] flex items-center bg-black">
         <Image
-          src="/images/features-bg.jpg"
+          src="/images/3.jpeg"
           alt="Real Estate Platform Features"
           fill
           priority
           className="object-cover opacity-90"
         />
-        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="absolute inset-0 bg-black/70"></div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 text-white">
-          <h1 className="text-4xl md:text-6xl font-bold">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 text-white text-center">
+          <h1 className="text-3xl md:text-6xl font-bold text-center">
             Platform Features
           </h1>
           <p className="mt-6 max-w-2xl text-white/80 text-lg">
@@ -84,7 +84,7 @@ export default function Feature() {
       </section>
 
       {/* FEATURES GRID */}
-      <section className="py-24 bg-white">
+      <section className="py-10 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6">
 
           {/* Heading */}
@@ -92,10 +92,10 @@ export default function Feature() {
             <p className="uppercase tracking-widest text-sm text-gray-400 mb-3">
               Why Choose Us
             </p>
-            <h2 className="text-4xl font-semibold text-gray-900">
+            <h2 className="text-xl md:text-4xl font-semibold text-gray-900">
               Smart Features for Modern <br /> Real Estate Experience
             </h2>
-            <p className="mt-5 text-gray-600 text-lg">
+            <p className="mt-5 text-gray-600  md:text-lg">
               We combine technology, expertise, and trust to deliver a seamless
               property experience.
             </p>
@@ -129,7 +129,7 @@ export default function Feature() {
       {/* CTA SECTION */}
       <section className="relative py-24 bg-black">
         <Image
-          src="/images/cta-bg.jpg"
+          src="/images/3.jpeg"
           alt="Start Property Journey"
           fill
           className="object-cover opacity-80"
@@ -137,10 +137,10 @@ export default function Feature() {
         <div className="absolute inset-0 bg-black/70"></div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 text-center text-white">
-          <h2 className="text-4xl md:text-5xl font-semibold">
+          <h2 className="text-xl md:text-4xl md:text-5xl font-semibold">
             Ready to Find Your <br /> Perfect Property?
           </h2>
-          <p className="mt-6 max-w-2xl mx-auto text-white/80 text-lg">
+          <p className="mt-6 max-w-2xl mx-auto text-white/80 text-sm md:text-lg">
             Start exploring verified properties and connect with experts who
             guide you every step of the way.
           </p>

@@ -47,10 +47,16 @@ export default function BetweenCitySection() {
           </button>
 
           {/* Logos */}
-          <div className="mt-10 flex items-center gap-1 grayscale opacity-80">
+          <div className="hidden md:flex mt-10  items-center gap-1 grayscale  ">
             <Image src="/images/abouicon1.png" alt="Badge" width={100} height={60} />
             <Image src="/images/abouicon2.png" alt="WiredScore" width={140} height={40} />
             <Image src="/images/abouicon3.png" alt="LEED" width={120} height={60} />
+          </div>
+           {/* Logos */}
+          <div className="mt-10 md:hidden flex items-center gap-1 grayscale  ">
+            <Image src="/images/abouicon1.png" alt="Badge" width={100} height={60} />
+            <Image src="/images/abouicon2.png" alt="WiredScore" width={70} height={40} className="scale-200" />
+            <Image src="/images/abouicon3.png" alt="LEED" width={100} height={60} className="scale-150 -mt-6" />
           </div>
         </div>
 
