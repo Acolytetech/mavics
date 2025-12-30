@@ -51,21 +51,22 @@ export default function Navbar() {
           </Link>
 
           {/* DESKTOP MENU */}
-          <nav className="hidden md:flex items-center gap-8 text-sm">
+          <nav className="hidden md:flex items-center gap-8 text-lg">
             <Link href="/" className={linkClass("/")}>Home</Link>
             <Link href="/about" className={linkClass("/about")}>About</Link>
             <Link href="/residences" className={linkClass("/residences")}>Residences</Link>
             <Link href="/feature" className={linkClass("/feature")}>Features</Link>
             <Link href="/contact" className={linkClass("/contact")}>Contact</Link>
-          </nav>
-
-          {/* INQUIRY BUTTON */}
+             {/* INQUIRY BUTTON */}
           <button
             onClick={openPopup}
-            className="hidden md:block px-5 py-2 rounded-full bg-gray-900 text-white text-sm hover:bg-gray-800"
+            className="hidden md:block px-5 py-2 rounded-full bg-gray-900 text-white text-lg hover:bg-gray-800"
           >
             Inquiry Now
           </button>
+          </nav>
+
+         
 
           {/* MOBILE BUTTON */}
           <button
