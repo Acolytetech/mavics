@@ -19,7 +19,7 @@ export default function Footer() {
         <div>
           <div className="flex items-center gap-2 mb-4">
             <div className="w-fit rounded flex items-center justify-center font-bold">
-              <Image src="/images/logo.png" alt="Mavics Logo" width={150} height={24} />
+              <Image src="/images/logo1.png" alt="Mavics Logo" width={150} height={24} />
             </div>
             {/* <span className="text-xl font-semibold">Mavics</span> */}
           </div>
