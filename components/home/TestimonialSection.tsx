@@ -91,11 +91,11 @@ export default function TestimonialSection() {
                 {/* User */}
                 <div className="mt-6 flex items-center gap-4">
                   <Image
-                    src={testimonials[index].image}
+                    src= "/images/userimg.jpg"
                     alt={testimonials[index].name}
-                    width={48}
-                    height={48}
-                    className="rounded-full object-cover"
+                    width={70}
+                    height={70}
+                    className="rounded-full w-16 h-16 object-cover"
                   />
                   <div>
                     <p className="font-semibold text-gray-900">
